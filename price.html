@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://akt-sverki.veridok.ru/price.html">
+<title>Цена — сверка взаиморасчётов с контрагентами</title>
+<meta name="description" content="Цена сверки взаиморасчётов с покупателями и поставщиками: сопоставление документов, разбор расхождений и акт сверки.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Акт сверки</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Сопоставление документов, расхождения с причиной и готовый акт сверки по каждому контрагенту.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>До 30 контрагентов</b><span>990 ₽ в месяц — сверки с 30 контрагентами.</span><br><a class="btn" href="pay.html?plan=do30" data-ev="payment_click click_pay_do30">Оплатить — 990 ₽</a></div>
+      <div class="card"><b>До 150 контрагентов</b><span>1 390 ₽ в месяц — сверки со 150 контрагентами.</span><br><a class="btn" href="pay.html?plan=do150" data-ev="payment_click click_pay_do150">Оплатить — 1 390 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Сверка по загруженным вами данным. Правильность учёта и подписанный акт остаются за компанией.</p>
+</div></footer>
+
+</body>
+</html>
