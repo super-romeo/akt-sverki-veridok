@@ -63,143 +63,152 @@
 </head>
 <body>
 
-<header class="gn"><div class="wrap">
+<header><div class="wrap">
   <div class="logo"><a href="index.html" data-ev="click_logo_home"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="16" height="16" rx="4.5" fill="#0071e3"/><path d="M6 10.4l2.6 2.6L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Акт сверки</a></div>
   <nav class="top" aria-label="Разделы"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
 <main>
-<div class="wrap">
-  <div class="hero">
-    <h1><span class="kicker">Сверка взаиморасчётов с покупателями и поставщиками</span>Расхождения видны до того, как акт уйдёт контрагенту.</h1>
-    <p class="sub">Для бухгалтерии компаний, у которых десятки контрагентов. Вы загружаете свои документы и акт сверки контрагента, а сервис сопоставляет их построчно, показывает, где не сходится и почему, и собирает акт сверки для отправки.</p>
-    <div class="actions">
-      <a class="pill" href="price.html" data-ev="cta_click">Узнать стоимость и тарифы</a>
-    </div>
-    <p class="note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-
-    <div class="stage" aria-hidden="true">
-      <div class="win">
-        <div class="win-bar"><i></i><i></i><i></i><b>Сверка с контрагентом</b></div>
-        <div class="win-cols">
-          <div class="win-col">
-            <div class="col-h">Ваш учёт</div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row miss"><span class="dot"><svg viewBox="0 0 10 10"><path d="M5 2.4v3.2M5 7.4v.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row date"><span class="dot"><svg viewBox="0 0 10 10"><path d="M5 2.6V5l1.6 1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-          </div>
-          <div class="win-col">
-            <div class="col-h">Акт контрагента</div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row ghost"></div>
-            <div class="row ok"><span class="dot"><svg viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-            <div class="row date"><span class="dot"><svg viewBox="0 0 10 10"><path d="M5 2.6V5l1.6 1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="bar"></span><span class="bar s"></span></div>
-          </div>
+  <section>
+    <div class="wrap">
+      <div class="stack center">
+        <h1><span class="kicker">Сверка взаиморасчётов с покупателями и поставщиками</span>Расхождения видны до того, как акт уйдёт контрагенту.</h1>
+        <p class="lead">Для бухгалтерии компаний, у которых десятки контрагентов. Вы загружаете свои документы и акт сверки контрагента, а сервис сопоставляет их построчно, показывает, где не сходится и почему, и собирает акт сверки для отправки.</p>
+        <a class="pill" href="price.html" data-ev="cta_click">Узнать стоимость и тарифы</a>
+        <p class="note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+      </div>
+      <figure class="win" aria-hidden="true">
+        <figcaption><i class="dot miss"></i><i class="dot date"></i><i class="dot ok"></i>Сверка с контрагентом</figcaption>
+        <div class="cols">
+          <ul class="rows">
+            <li class="caption">Ваш учёт</li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="miss"><i class="dot"></i></li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="date"><i class="dot"></i></li>
+          </ul>
+          <ul class="rows">
+            <li class="caption">Акт контрагента</li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="ghost miss"></li>
+            <li class="ok"><i class="dot"></i></li>
+            <li class="date"><i class="dot"></i></li>
+          </ul>
         </div>
-        <div class="win-foot"><span class="tag ok">Совпало</span><span class="tag bad">Нет у контрагента</span><span class="tag warn">Другой период</span></div>
-      </div>
+        <div class="tags"><span class="tag ok"><i class="dot"></i>Совпало</span><span class="tag miss"><i class="dot"></i>Нет у контрагента</span><span class="tag date"><i class="dot"></i>Другой период</span></div>
+      </figure>
     </div>
-  </div>
+  </section>
 
-  <section id="chto" class="sec" data-view="features_view">
-    <div class="sec-head">
-      <h2>Что вы получаете</h2>
-      <p>Четыре шага сверки, которые сейчас делаются глазами по двум длинным таблицам.</p>
-    </div>
-    <div class="tiles">
-      <div class="tile rise">
-        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h8l5 5v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 6 21.5v-16.5A1.5 1.5 0 0 1 7 3.5z"/><path d="M15 3.5v5h5"/><path d="M13 18v-6m-2.6 2.6L13 12l2.6 2.6"/></svg></span>
-        <h3>Документы файлами</h3>
-        <p>Выгрузка из учёта и акт контрагента загружаются как есть.</p>
-        <a class="more" href="price.html" data-ev="feature_zagruzka">Мне это нужно</a>
+  <section id="chto" data-view="features_view">
+    <div class="wrap">
+      <div class="stack center">
+        <h2>Что вы получаете</h2>
+        <p class="lead">Четыре шага сверки, которые сейчас делаются глазами по двум длинным таблицам.</p>
       </div>
-      <div class="tile rise">
-        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h7M4 13h7M4 19h7M15 7h7M15 13h7M15 19h7"/></svg></span>
-        <h3>Построчное сопоставление</h3>
-        <p>Документ к документу: дата, номер, сумма.</p>
-        <a class="more" href="price.html" data-ev="feature_sopostavlenie">Мне это нужно</a>
-      </div>
-      <div class="tile rise">
-        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="13" r="9"/><path d="M13 8.5v5.5M13 17.4v.1"/></svg></span>
-        <h3>Расхождения с причиной</h3>
-        <p>Нет документа, другая сумма, другая дата.</p>
-        <a class="more" href="price.html" data-ev="feature_rashozhdeniya">Мне это нужно</a>
-      </div>
-      <div class="tile rise">
-        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h12A1.5 1.5 0 0 1 20.5 5v16.5A1.5 1.5 0 0 1 19 23H7a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 7 3.5z"/><path d="M9.5 9h7M9.5 13h7"/><path d="M9.5 18l2 2 4-4"/></svg></span>
-        <h3>Готовый акт сверки</h3>
-        <p>Акт по итогам сверки — файлом для контрагента.</p>
-        <a class="more" href="price.html" data-ev="feature_akt">Мне это нужно</a>
+      <div class="grid">
+        <div class="card stack">
+          <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h8l5 5v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 6 21.5v-16.5A1.5 1.5 0 0 1 7 3.5z"/><path d="M15 3.5v5h5"/><path d="M13 18v-6m-2.6 2.6L13 12l2.6 2.6"/></svg>
+          <h3>Документы файлами</h3>
+          <p>Выгрузка из учёта и акт контрагента загружаются как есть.</p>
+          <a class="more" href="price.html" data-ev="feature_zagruzka">Мне это нужно</a>
+        </div>
+        <div class="card stack">
+          <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h7M4 13h7M4 19h7M15 7h7M15 13h7M15 19h7"/></svg>
+          <h3>Построчное сопоставление</h3>
+          <p>Документ к документу: дата, номер, сумма.</p>
+          <a class="more" href="price.html" data-ev="feature_sopostavlenie">Мне это нужно</a>
+        </div>
+        <div class="card stack">
+          <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="13" r="9"/><path d="M13 8.5v5.5M13 17.4v.1"/></svg>
+          <h3>Расхождения с причиной</h3>
+          <p>Нет документа, другая сумма, другая дата.</p>
+          <a class="more" href="price.html" data-ev="feature_rashozhdeniya">Мне это нужно</a>
+        </div>
+        <div class="card stack">
+          <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h12A1.5 1.5 0 0 1 20.5 5v16.5A1.5 1.5 0 0 1 19 23H7a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 7 3.5z"/><path d="M9.5 9h7M9.5 13h7"/><path d="M9.5 18l2 2 4-4"/></svg>
+          <h3>Готовый акт сверки</h3>
+          <p>Акт по итогам сверки — файлом для контрагента.</p>
+          <a class="more" href="price.html" data-ev="feature_akt">Мне это нужно</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="primer" class="sec" data-view="example_view">
-    <div class="showcase rise">
-      <div>
-        <span class="lbl">Пример (вымышленные данные)</span>
-        <h2>Квартал закрывается. Сальдо с крупным покупателем не сходится.</h2>
-        <p class="story">Бухгалтер оптовой компании закрывает квартал: нужно сверить расчёты с тридцатью покупателями. От крупного покупателя пришёл акт сверки, и сальдо в нём расходится с учётом. Бухгалтер загружает выгрузку из своего учёта и акт покупателя. Сервис показывает две строки: у покупателя нет одной отгрузки конца месяца, а одна оплата у него проведена на день позже, в следующем периоде. Бухгалтер отправляет покупателю копию накладной и подписанный акт с пояснением.</p>
-        <a class="pill" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
-      </div>
-      <div class="show-card" aria-hidden="true">
-        <span class="h">Расхождения</span>
-        <div class="diff miss"><span class="dot"></span><div><b>Отгрузка конца месяца</b><span>Есть только у вас, у покупателя не проведена</span></div></div>
-        <div class="diff date"><span class="dot"></span><div><b>Оплата покупателя</b><span>Проведена на день позже и попала в следующий период</span></div></div>
-        <div class="diff ok"><span class="dot"></span><div><b>Остальные документы</b><span>Совпали построчно</span></div></div>
+  <section id="primer" class="dark" data-view="example_view">
+    <div class="wrap">
+      <div class="grid">
+        <div class="stack">
+          <span class="caption">Пример (вымышленные данные)</span>
+          <h2>Квартал закрывается. Сальдо с крупным покупателем не сходится.</h2>
+          <p class="lead">Бухгалтер оптовой компании закрывает квартал: нужно сверить расчёты с тридцатью покупателями. От крупного покупателя пришёл акт сверки, и сальдо в нём расходится с учётом. Бухгалтер загружает выгрузку из своего учёта и акт покупателя. Сервис показывает две строки: у покупателя нет одной отгрузки конца месяца, а одна оплата у него проведена на день позже, в следующем периоде. Бухгалтер отправляет покупателю копию накладной и подписанный акт с пояснением.</p>
+          <a class="pill" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+        </div>
+        <ul class="list" aria-hidden="true">
+          <li class="caption">Расхождения</li>
+          <li class="miss"><i class="dot"></i><p><b>Отгрузка конца месяца</b>Есть только у вас, у покупателя не проведена</p></li>
+          <li class="date"><i class="dot"></i><p><b>Оплата покупателя</b>Проведена на день позже и попала в следующий период</p></li>
+          <li class="ok"><i class="dot"></i><p><b>Остальные документы</b>Совпали построчно</p></li>
+        </ul>
       </div>
     </div>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis" class="sec prose">
-    <h2>Как это работает</h2>
-    <p>Акт сверки взаиморасчётов — обычная работа бухгалтерии в конце месяца, квартала или года. Компания и контрагент сравнивают, какие отгрузки, оплаты и возвраты каждый из них учёл, и подтверждают, кто кому сколько должен.</p>
-    <p>Когда контрагентов несколько, это занимает немного времени. Когда их десятки, сверка превращается в отдельную работу: собрать документы по каждому, выгрузить данные из учёта, получить акт контрагента, сравнить его со своими данными строка за строкой.</p>
-    <p>Сложнее всего — когда сальдо не сходится. Тогда бухгалтер ищет, какой документ у одной стороны есть, а у другой нет, где сумма отличается на копейки из-за округления, где оплата проведена другой датой и попала в другой период. По двум длинным таблицам это делается глазами и отнимает часы.</p>
-    <p>Сервис делает эту часть работы. Вы загружаете данные своей стороны — выгрузку из учётной программы или документы по контрагенту — и акт сверки, который прислал контрагент, в том виде, в котором он пришёл.</p>
-    <p>Сервис разбирает оба документа и сопоставляет строки: отгрузку с отгрузкой, оплату с оплатой, возврат с возвратом. Учитываются дата, номер документа и сумма; если номер записан по-разному, документ всё равно находится по сочетанию суммы и даты.</p>
-    <p>Всё, что сошлось, отмечается как совпавшее. Расхождения выводятся отдельным списком, и у каждого названа причина: документ есть только у вас, документ есть только у контрагента, сумма отличается, дата отличается и документ попал в другой период.</p>
-    <p>Итоговая разница раскладывается на эти причины. Видно, что из 48 тысяч расхождения 40 тысяч — одна отгрузка, которую контрагент ещё не провёл, а остальное — оплата, проведённая следующим днём. С таким разбором разговор с контрагентом занимает минуты, а не неделю переписки.</p>
-    <p>Когда расхождения разобраны, сервис собирает акт сверки за период: начальное сальдо, обороты по документам, конечное сальдо, пояснения к расхождениям. Акт выдаётся файлом, который можно подписать и отправить контрагенту так, как вы обычно это делаете.</p>
-    <p>Если сверку начинаете вы, сервис соберёт акт по вашим данным, и останется только отправить его контрагенту. Когда тот вернёт свою версию, её можно загрузить и сопоставить с вашей.</p>
-    <p>Все сверки хранятся по контрагентам и периодам. В начале следующего периода видно, с кем сверка прошлого периода закончилась расхождением и что осталось неразобранным.</p>
-    <p>Руководитель бухгалтерии видит общий список: с какими контрагентами сверка уже подписана, с какими есть расхождения, от кого ещё не пришёл акт. Перед закрытием года это помогает не потерять ни одного контрагента.</p>
-    <p>Сервис рассчитан на бухгалтерии российских компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками. Сейчас он в подготовке: сначала мы проверяем, нужен ли он бухгалтерам.</p>
-    <p>Загруженные документы используются только для сверки и не передаются третьим лицам.</p>
-    <p>Сервис сопоставляет загруженные вами данные; правильность учёта и подписанный акт остаются за компанией и её бухгалтером.</p>
+  <section id="opis">
+    <div class="wrap">
+      <h2 class="center">Как это работает</h2>
+      <div class="prose">
+        <p>Акт сверки взаиморасчётов — обычная работа бухгалтерии в конце месяца, квартала или года. Компания и контрагент сравнивают, какие отгрузки, оплаты и возвраты каждый из них учёл, и подтверждают, кто кому сколько должен.</p>
+        <p>Когда контрагентов несколько, это занимает немного времени. Когда их десятки, сверка превращается в отдельную работу: собрать документы по каждому, выгрузить данные из учёта, получить акт контрагента, сравнить его со своими данными строка за строкой.</p>
+        <p>Сложнее всего — когда сальдо не сходится. Тогда бухгалтер ищет, какой документ у одной стороны есть, а у другой нет, где сумма отличается на копейки из-за округления, где оплата проведена другой датой и попала в другой период. По двум длинным таблицам это делается глазами и отнимает часы.</p>
+        <p>Сервис делает эту часть работы. Вы загружаете данные своей стороны — выгрузку из учётной программы или документы по контрагенту — и акт сверки, который прислал контрагент, в том виде, в котором он пришёл.</p>
+        <p>Сервис разбирает оба документа и сопоставляет строки: отгрузку с отгрузкой, оплату с оплатой, возврат с возвратом. Учитываются дата, номер документа и сумма; если номер записан по-разному, документ всё равно находится по сочетанию суммы и даты.</p>
+        <p>Всё, что сошлось, отмечается как совпавшее. Расхождения выводятся отдельным списком, и у каждого названа причина: документ есть только у вас, документ есть только у контрагента, сумма отличается, дата отличается и документ попал в другой период.</p>
+        <p>Итоговая разница раскладывается на эти причины. Видно, что из 48 тысяч расхождения 40 тысяч — одна отгрузка, которую контрагент ещё не провёл, а остальное — оплата, проведённая следующим днём. С таким разбором разговор с контрагентом занимает минуты, а не неделю переписки.</p>
+        <p>Когда расхождения разобраны, сервис собирает акт сверки за период: начальное сальдо, обороты по документам, конечное сальдо, пояснения к расхождениям. Акт выдаётся файлом, который можно подписать и отправить контрагенту так, как вы обычно это делаете.</p>
+        <p>Если сверку начинаете вы, сервис соберёт акт по вашим данным, и останется только отправить его контрагенту. Когда тот вернёт свою версию, её можно загрузить и сопоставить с вашей.</p>
+        <p>Все сверки хранятся по контрагентам и периодам. В начале следующего периода видно, с кем сверка прошлого периода закончилась расхождением и что осталось неразобранным.</p>
+        <p>Руководитель бухгалтерии видит общий список: с какими контрагентами сверка уже подписана, с какими есть расхождения, от кого ещё не пришёл акт. Перед закрытием года это помогает не потерять ни одного контрагента.</p>
+        <p>Сервис рассчитан на бухгалтерии российских компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками. Сейчас он в подготовке: сначала мы проверяем, нужен ли он бухгалтерам.</p>
+        <p>Загруженные документы используются только для сверки и не передаются третьим лицам.</p>
+        <p>Сервис сопоставляет загруженные вами данные; правильность учёта и подписанный акт остаются за компанией и её бухгалтером.</p>
+      </div>
+    </div>
   </section>
-  <section id="faq" class="sec faq">
-    <h2>Вопросы и ответы</h2>
-    <div class="faq-list">
-      <div class="faq-item"><h3>Для кого сервис?</h3>
-      <p>Для бухгалтерий компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками.</p></div>
-      <div class="faq-item"><h3>Что нужно загрузить?</h3>
-      <p>Данные своей стороны — выгрузку из учёта или документы — и акт сверки, который прислал контрагент.</p></div>
-      <div class="faq-item"><h3>Что видно после сверки?</h3>
-      <p>Какие документы совпали, какие расходятся и по какой причине, и из чего складывается разница сальдо.</p></div>
-      <div class="faq-item"><h3>Сервис сам отправляет акт контрагенту?</h3>
-      <p>Нет. Он собирает акт файлом, а подписываете и отправляете его вы.</p></div>
-      <div class="faq-item"><h3>Можно уже пользоваться?</h3>
-      <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он бухгалтерам.</p></div>
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="center">Вопросы и ответы</h2>
+      <div class="list prose">
+        <div><h3>Для кого сервис?</h3>
+        <p>Для бухгалтерий компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками.</p></div>
+        <div><h3>Что нужно загрузить?</h3>
+        <p>Данные своей стороны — выгрузку из учёта или документы — и акт сверки, который прислал контрагент.</p></div>
+        <div><h3>Что видно после сверки?</h3>
+        <p>Какие документы совпали, какие расходятся и по какой причине, и из чего складывается разница сальдо.</p></div>
+        <div><h3>Сервис сам отправляет акт контрагенту?</h3>
+        <p>Нет. Он собирает акт файлом, а подписываете и отправляете его вы.</p></div>
+        <div><h3>Можно уже пользоваться?</h3>
+        <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он бухгалтерам.</p></div>
+      </div>
     </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" class="sec start" data-view="start_view">
-    <div class="start-card rise">
-      <h2>Начните первую сверку</h2>
-      <p class="lead">Скажите, сколько контрагентов у вас в работе.</p>
-      <label class="field">Сколько контрагентов сверяете<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 10</option><option>11–50</option><option>51–200</option><option>Больше 200</option></select></label>
-      <a class="pill" href="price.html" data-ev="form_submit_click">Начать</a>
-      <p class="note">Сервис в подготовке · оплата пока не принимается</p>
+  <section id="start" data-view="start_view">
+    <div class="wrap">
+      <div class="card stack center prose">
+        <h2>Начните первую сверку</h2>
+        <p class="lead">Скажите, сколько контрагентов у вас в работе.</p>
+        <label>Сколько контрагентов сверяете<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 10</option><option>11–50</option><option>51–200</option><option>Больше 200</option></select></label>
+        <a class="pill" href="price.html" data-ev="form_submit_click">Начать</a>
+        <p class="note">Сервис в подготовке · оплата пока не принимается</p>
+      </div>
     </div>
   </section>
-</div>
 </main>
 
-<footer class="gf"><div class="wrap">
+<footer><div class="wrap">
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
   <p class="muted">Сверка по загруженным вами данным. Правильность учёта и подписанный акт остаются за компанией.</p>
 </div></footer>
