@@ -1,25 +1,28 @@
 /* Вариант оформления: Apple design (Emil Kowalski, apple-design).
    Токены — по правилам стиля; ниже — общие правила элементов, только на токенах.
-   Светлая и тёмная схемы — одной строкой через light-dark(); тёмная полоса — color-scheme: dark. */
+   Схема одна, светлая (палитра смоков); бывшая тёмная полоса .dark — светлая чередующаяся. */
 :root {
-  color-scheme: light dark;
-  /* цвет */
-  --bg: light-dark(#ffffff, #000000);
-  --bg-2: light-dark(#f5f5f7, #1d1d1f);
-  --text: light-dark(#1d1d1f, #f5f5f7);
-  --text-2: light-dark(#6e6e73, #a1a1a6);
-  --line: light-dark(rgba(0, 0, 0, .1), rgba(255, 255, 255, .14));
-  --link: light-dark(#0066cc, #2997ff);
-  --accent: #0071e3;
-  --accent-press: #0062c4;
+  color-scheme: light;
+  /* цвет — общая палитра смоков (СМ-04), одна светлая схема и в тёмном режиме системы */
+  --bg: #fcfcfc;
+  --bg-2: #f7f8f9;
+  --surface: #ffffff;
+  --alt: #f7f8f9;
+  --text: #05080b;
+  --text-2: #5c646f;
+  --line: #dfe1e5;
+  --link: #006acf;
+  --accent: #006acf;
+  --accent-press: color-mix(in srgb, #006acf 88%, #05080b);
   --on-accent: #ffffff;
-  --ok: light-dark(#1a7f37, #4cd964);
-  --warn: light-dark(#b25000, #ffb340);
-  --bad: light-dark(#c9302c, #ff6961);
-  --glass: light-dark(rgba(255, 255, 255, .72), rgba(22, 22, 23, .72));
-  /* шрифт: системный, крупное — плотнее и с отрицательной разрядкой */
-  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --focus: #0086dd;
+  --ok: #1a7f37;
+  --warn: #9a6700;
+  --bad: #cf222e;
+  --glass: color-mix(in srgb, #fcfcfc 72%, transparent);
+  /* шрифт: Inter для всего, крупное — плотнее и с отрицательной разрядкой */
+  --font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --t-display: clamp(2.5rem, 6.4vw, 4.5rem);
   --t-h2: clamp(2rem, 4.6vw, 3rem);
   --t-h3: clamp(1.25rem, 2.4vw, 1.5rem);
@@ -58,7 +61,7 @@ h3 { font-size: var(--t-h3); line-height: 1.2; letter-spacing: var(--tr-h3); }
 p { margin: 0; }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
-:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 60%, transparent); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 p.lead { max-width: 40em; margin: 0; color: var(--text-2); font-size: var(--t-lead); line-height: 1.42; text-wrap: pretty; }
 .kicker { display: block; margin-bottom: var(--s-2); color: var(--text-2); font-size: var(--t-h3); line-height: 1.2; letter-spacing: var(--tr-h3); font-weight: 600; }
 .caption { color: var(--text-2); font-size: var(--t-caption); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
@@ -74,7 +77,7 @@ section > .wrap { display: flex; flex-direction: column; gap: var(--s-5); }
 .prose { width: 100%; max-width: 692px; margin-inline: auto; }
 .prose > p:not([class]) { font-size: var(--t-lead); line-height: 1.58; }
 .prose > p + p { margin-top: 1em; }
-.dark { color-scheme: dark; background: var(--bg); color: var(--text); }
+.dark { color-scheme: light; --bg-2: var(--surface); background: var(--alt); color: var(--text); }
 
 /* шапка — полупрозрачный слой, страница уходит под него */
 header { position: sticky; top: 0; z-index: 20; background: var(--glass); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); border-bottom: 0; }
@@ -110,7 +113,7 @@ nav.top a:hover { opacity: 1; color: var(--text); text-decoration: none; }
 .miss { --c: var(--bad); --soft: color-mix(in srgb, var(--bad) 12%, transparent); }
 .date { --c: var(--warn); --soft: color-mix(in srgb, var(--warn) 12%, transparent); }
 .dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
-.tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: var(--r-pill); background: color-mix(in srgb, var(--c) 12%, transparent); color: var(--c); font-size: var(--t-small); font-weight: 500; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: var(--r-pill); background: color-mix(in srgb, var(--c) 12%, transparent); color: var(--text); font-size: var(--t-small); font-weight: 500; }
 
 /* первый экран: нарисованное окно сверки */
 .win { width: 100%; max-width: 880px; margin: var(--s-1) auto 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--bg); box-shadow: var(--shadow-l); text-align: left; font-size: var(--t-small); letter-spacing: 0; }
