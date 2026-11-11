@@ -8,6 +8,10 @@
 <meta name="description" content="Сверка взаиморасчётов с покупателями и поставщиками: загрузите документы и акт контрагента — сервис найдёт расхождения и соберёт акт сверки.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,37 +66,136 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Акт сверки</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Акт сверки</a>
+  <nav aria-label="Разделы страницы"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Сверка взаиморасчётов с покупателями и поставщиками — расхождения видны до того, как акт уйдёт контрагенту</h1>
-    <p class="sub">Для бухгалтерии компаний, у которых десятки контрагентов: вы загружаете свои документы и акт сверки контрагента, сервис сопоставляет их построчно, показывает, где не сходится и почему, и собирает акт сверки для отправки.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Узнать стоимость и тарифы</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для бухгалтерии компаний, у которых десятки контрагентов</p>
+      <h1 class="rise" style="--i:1" data-len="xlong">Сверка взаиморасчётов с покупателями и поставщиками <span class="soft">— расхождения видны до того, как акт уйдёт контрагенту</span></h1>
+      <p class="rise" style="--i:2">Вы загружаете свои документы и акт сверки контрагента, сервис сопоставляет их построчно, показывает, где не сходится и почему, и собирает акт сверки для отправки.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Узнать стоимость и тарифы</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+
+    <figure class="window rise" style="--i:2"><svg class="shot" viewBox="0 0 1200 800" aria-hidden="true" focusable="false" font-family="inherit" font-size="34">
+      <defs>
+        <g id="pic-row"><rect width="480" height="52" rx="8" fill="#eef2f7"/><rect x="16" y="19" width="84" height="14" rx="7" fill="#dde2ea"/><rect x="124" y="19" width="150" height="14" rx="7" fill="#dde2ea"/><rect x="372" y="19" width="92" height="14" rx="7" fill="#566174"/></g>
+        <g id="pic-row-diff"><rect x="1" y="1" width="478" height="50" rx="8" fill="#dfe8f7" stroke="#12397a" stroke-width="2"/><rect x="16" y="19" width="84" height="14" rx="7" fill="#12397a"/><rect x="124" y="19" width="150" height="14" rx="7" fill="#ffffff"/><rect x="372" y="19" width="92" height="14" rx="7" fill="#566174"/></g>
+        <g id="pic-ok"><path d="M-60 0H60" stroke="#dde2ea" stroke-width="3"/><circle r="13" fill="#12397a"/><path d="M-6 0l4 4 8-8" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g id="pic-no"><path d="M-60 0H60" stroke="#dde2ea" stroke-width="3" stroke-dasharray="6 8"/><circle r="12" fill="#ffffff" stroke="#12397a" stroke-width="3"/></g>
+      </defs>
+      <rect width="1200" height="800" fill="#ffffff"/>
+      <text x="60" y="88" fill="#566174">Выгрузка из учёта</text>
+      <text x="660" y="88" fill="#566174">Акт контрагента</text>
+      <use href="#pic-row" x="60" y="120"/><use href="#pic-row" x="660" y="120"/><use href="#pic-ok" x="600" y="146"/>
+      <use href="#pic-row" x="60" y="184"/><use href="#pic-row" x="660" y="184"/><use href="#pic-ok" x="600" y="210"/>
+      <use href="#pic-row-diff" x="60" y="248"/><rect x="661" y="249" width="478" height="50" rx="8" fill="none" stroke="#12397a" stroke-width="2" stroke-dasharray="8 8"/><use href="#pic-no" x="600" y="274"/>
+      <use href="#pic-row" x="60" y="312"/><use href="#pic-row" x="660" y="312"/><use href="#pic-ok" x="600" y="338"/>
+      <use href="#pic-row-diff" x="60" y="376"/><use href="#pic-row-diff" x="660" y="376"/><use href="#pic-no" x="600" y="402"/>
+      <use href="#pic-row" x="60" y="440"/><use href="#pic-row" x="660" y="440"/><use href="#pic-ok" x="600" y="466"/>
+      <rect x="60" y="540" width="1080" height="200" rx="16" fill="#eef2f7"/>
+      <text x="92" y="604" fill="#566174">Расхождения</text>
+      <rect x="92" y="632" width="300" height="72" rx="12" fill="#dfe8f7"/><text x="242" y="680" text-anchor="middle" font-weight="600" fill="#12397a">Нет документа</text>
+      <rect x="412" y="632" width="264" height="72" rx="12" fill="#dfe8f7"/><text x="544" y="680" text-anchor="middle" font-weight="600" fill="#12397a">Другая дата</text>
+      <rect x="828" y="632" width="280" height="72" rx="12" fill="#12397a"/><text x="968" y="680" text-anchor="middle" font-weight="600" fill="#ffffff">Акт сверки</text>
+    </svg></figure>
+    <dl class="facts">
+      <div><dt>Кому</dt><dd>Бухгалтерии и аутсорсу</dd></div>
+      <div><dt>Загрузка</dt><dd>Файлы как есть</dd></div>
+      <div><dt>Сверка</dt><dd>Документ к документу</dd></div>
+      <div><dt>Итог</dt><dd>Акт сверки файлом</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Документы файлами</b><span>Выгрузка из учёта и акт контрагента загружаются как есть.</span><br><a class="btn" href="price.html" data-ev="feature_zagruzka">Мне это нужно</a></div>
-      <div class="card"><b>Построчное сопоставление</b><span>Документ к документу: дата, номер, сумма.</span><br><a class="btn" href="price.html" data-ev="feature_sopostavlenie">Мне это нужно</a></div>
-      <div class="card"><b>Расхождения с причиной</b><span>Нет документа, другая сумма, другая дата.</span><br><a class="btn" href="price.html" data-ev="feature_rashozhdeniya">Мне это нужно</a></div>
-      <div class="card"><b>Готовый акт сверки</b><span>Акт по итогам сверки — файлом для контрагента.</span><br><a class="btn" href="price.html" data-ev="feature_akt">Мне это нужно</a></div>
+    <div class="split">
+      <div class="stack"><h2>Что вы получаете</h2></div>
+    </div>
+    <div class="bento">
+      <article class="tile stack wide reveal">
+        <div class="art"><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false">
+          <rect width="400" height="300" fill="#eef2f7"/>
+          <path d="M70 50h80l30 30v120H70z" fill="#ffffff" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/><path d="M150 50v30h30" fill="none" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M88 108h74M88 132h74M88 156h48" stroke="#dde2ea" stroke-width="8" stroke-linecap="round"/>
+          <path d="M220 50h80l30 30v120H220z" fill="#ffffff" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/><path d="M300 50v30h30" fill="none" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M238 108h74M238 132h74M238 156h48" stroke="#dde2ea" stroke-width="8" stroke-linecap="round"/>
+          <path d="M60 250h280" stroke="#12397a" stroke-width="10" stroke-linecap="round"/>
+          <path d="M200 196v34M186 218l14 14 14-14" fill="none" stroke="#12397a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Документы файлами</h3><p>Выгрузка из учёта и акт контрагента загружаются как есть.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_zagruzka">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false">
+          <rect width="400" height="300" fill="#eef2f7"/>
+          <g fill="#ffffff" stroke="#dde2ea" stroke-width="3"><rect x="40" y="48" width="130" height="40" rx="8"/><rect x="40" y="104" width="130" height="40" rx="8"/><rect x="40" y="160" width="130" height="40" rx="8"/><rect x="40" y="216" width="130" height="40" rx="8"/><rect x="230" y="48" width="130" height="40" rx="8"/><rect x="230" y="104" width="130" height="40" rx="8"/><rect x="230" y="160" width="130" height="40" rx="8"/><rect x="230" y="216" width="130" height="40" rx="8"/></g>
+          <path d="M56 68h60M56 124h80M56 180h50M56 236h70M246 68h60M246 124h80M246 180h50M246 236h70" stroke="#dde2ea" stroke-width="8" stroke-linecap="round"/>
+          <path d="M170 68h60M170 124h60M170 180h60M170 236h60" stroke="#12397a" stroke-width="4"/>
+          <g fill="#12397a"><circle cx="170" cy="68" r="7"/><circle cx="230" cy="68" r="7"/><circle cx="170" cy="124" r="7"/><circle cx="230" cy="124" r="7"/><circle cx="170" cy="180" r="7"/><circle cx="230" cy="180" r="7"/><circle cx="170" cy="236" r="7"/><circle cx="230" cy="236" r="7"/></g>
+        </svg></div>
+        <h3>Построчное сопоставление</h3><p>Документ к документу: дата, номер, сумма.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_sopostavlenie">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false">
+          <rect width="400" height="300" fill="#eef2f7"/>
+          <g fill="#ffffff" stroke="#dde2ea" stroke-width="3"><rect x="50" y="44" width="300" height="44" rx="8"/><rect x="50" y="100" width="300" height="44" rx="8"/><rect x="50" y="212" width="300" height="44" rx="8"/></g>
+          <rect x="50" y="156" width="300" height="44" rx="8" fill="#dfe8f7" stroke="#12397a" stroke-width="3"/>
+          <path d="M70 66h110M70 122h140M70 234h90" stroke="#dde2ea" stroke-width="8" stroke-linecap="round"/>
+          <path d="M70 178h100" stroke="#12397a" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="318" cy="178" r="13" fill="#12397a"/><path d="M318 171v8M318 185v.5" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+          <g fill="#566174"><circle cx="318" cy="66" r="6"/><circle cx="318" cy="122" r="6"/><circle cx="318" cy="234" r="6"/></g>
+        </svg></div>
+        <h3>Расхождения с причиной</h3><p>Нет документа, другая сумма, другая дата.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_rashozhdeniya">Мне это нужно</a>
+      </article>
+      <article class="tile stack wide reveal">
+        <div class="art"><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false">
+          <rect width="400" height="300" fill="#eef2f7"/>
+          <path d="M110 36h130l50 50v178H110z" fill="#ffffff" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/><path d="M240 36v50h50" fill="none" stroke="#dde2ea" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M134 80h70" stroke="#0a1524" stroke-width="8" stroke-linecap="round"/>
+          <path d="M134 118h132M134 142h132M134 166h132M134 190h84" stroke="#dde2ea" stroke-width="8" stroke-linecap="round"/>
+          <path d="M134 236h52M214 236h52" stroke="#566174" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="290" cy="232" r="30" fill="#12397a"/><path d="M276 232l10 10 18-20" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Готовый акт сверки</h3><p>Акт по итогам сверки — файлом для контрагента.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_akt">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Бухгалтер оптовой компании закрывает квартал: нужно сверить расчёты с тридцатью покупателями. От крупного покупателя пришёл акт сверки, сальдо расходится на 48 тысяч рублей. Бухгалтер загружает выгрузку из своего учёта и акт покупателя. Сервис показывает две строки: у покупателя нет одной отгрузки конца месяца, а одна оплата у него проведена на день позже, в следующем периоде. Бухгалтер отправляет покупателю копию накладной и подписанный акт с пояснением.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" class="split flip" data-view="example_view">
+    <div class="stack">
+      <p class="meta">Вымышленные данные</p>
+      <h2>Пример</h2>
+      <p>Бухгалтер оптовой компании закрывает квартал: нужно сверить расчёты с тридцатью покупателями. От крупного покупателя пришёл акт сверки, сальдо расходится на 48 тысяч рублей. Бухгалтер загружает выгрузку из своего учёта и акт покупателя. Сервис показывает две строки: у покупателя нет одной отгрузки конца месяца, а одна оплата у него проведена на день позже, в следующем периоде. Бухгалтер отправляет покупателю копию накладной и подписанный акт с пояснением.</p>
+      <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+    <svg class="shot reveal" viewBox="0 0 1200 800" aria-hidden="true" focusable="false" font-family="inherit">
+      <rect width="1200" height="800" fill="#eef2f7"/>
+      <rect x="90" y="70" width="1020" height="660" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <text x="140" y="150" font-size="44" font-weight="600" fill="#0a1524">Сальдо расходится</text>
+      <text x="140" y="204" font-size="34" fill="#566174">Сервис показывает две строки</text>
+      <g fill="#eef2f7"><rect x="140" y="244" width="920" height="48" rx="8"/><rect x="140" y="304" width="920" height="48" rx="8"/><rect x="140" y="364" width="920" height="48" rx="8"/></g>
+      <path d="M164 268h120M164 328h120M164 388h120M330 268h260M330 328h200M330 388h240M900 268h130M900 328h130M900 388h130" stroke="#dde2ea" stroke-width="14" stroke-linecap="round"/>
+      <rect x="140" y="444" width="920" height="112" rx="12" fill="#dfe8f7" stroke="#12397a" stroke-width="3"/>
+      <circle cx="190" cy="500" r="13" fill="#12397a"/>
+      <text x="230" y="490" font-size="38" font-weight="600" fill="#0a1524">Отгрузка</text>
+      <text x="230" y="534" font-size="32" fill="#566174">У покупателя нет</text>
+      <rect x="140" y="576" width="920" height="112" rx="12" fill="#dfe8f7" stroke="#12397a" stroke-width="3"/>
+      <circle cx="190" cy="632" r="13" fill="#12397a"/>
+      <text x="230" y="622" font-size="38" font-weight="600" fill="#0a1524">Оплата</text>
+      <text x="230" y="666" font-size="32" fill="#566174">На день позже</text>
+    </svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
     <p>Акт сверки взаиморасчётов — обычная работа бухгалтерии в конце месяца, квартала или года. Компания и контрагент сравнивают, какие отгрузки, оплаты и возвраты каждый из них учёл, и подтверждают, кто кому сколько должен.</p>
     <p>Когда контрагентов несколько, это занимает немного времени. Когда их десятки, сверка превращается в отдельную работу: собрать документы по каждому, выгрузить данные из учёта, получить акт контрагента, сравнить его со своими данными строка за строкой.</p>
     <p>Сложнее всего — когда сальдо не сходится. Тогда бухгалтер ищет, какой документ у одной стороны есть, а у другой нет, где сумма отличается на копейки из-за округления, где оплата проведена другой датой и попала в другой период. По двум длинным таблицам это делается глазами и отнимает часы.</p>
@@ -107,31 +210,33 @@
     <p>Сервис рассчитан на бухгалтерии российских компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками. Сейчас он в подготовке: сначала мы проверяем, нужен ли он бухгалтерам.</p>
     <p>Загруженные документы используются только для сверки и не передаются третьим лицам.</p>
     <p>Сервис сопоставляет загруженные вами данные; правильность учёта и подписанный акт остаются за компанией и её бухгалтером.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Для кого сервис?</h3>
-    <p>Для бухгалтерий компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками.</p>
-    <h3>Что нужно загрузить?</h3>
-    <p>Данные своей стороны — выгрузку из учёта или документы — и акт сверки, который прислал контрагент.</p>
-    <h3>Что видно после сверки?</h3>
-    <p>Какие документы совпали, какие расходятся и по какой причине, и из чего складывается разница сальдо.</p>
-    <h3>Сервис сам отправляет акт контрагенту?</h3>
-    <p>Нет. Он собирает акт файлом, а подписываете и отправляете его вы.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он бухгалтерам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Для кого сервис?</h3><p>Для бухгалтерий компаний и бухгалтеров на аутсорсе, которые регулярно сверяют расчёты с покупателями и поставщиками.</p></div>
+      <div class="split flip"><h3>Что нужно загрузить?</h3><p>Данные своей стороны — выгрузку из учёта или документы — и акт сверки, который прислал контрагент.</p></div>
+      <div class="split flip"><h3>Что видно после сверки?</h3><p>Какие документы совпали, какие расходятся и по какой причине, и из чего складывается разница сальдо.</p></div>
+      <div class="split flip"><h3>Сервис сам отправляет акт контрагенту?</h3><p>Нет. Он собирает акт файлом, а подписываете и отправляете его вы.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он бухгалтерам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Начните первую сверку</h2>
-    <p><label>Сколько контрагентов сверяете<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 10</option><option>11–50</option><option>51–200</option><option>Больше 200</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" class="split" data-view="start_view">
+    <div class="stack">
+      <h2>Начните первую сверку</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько контрагентов сверяете<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 10</option><option>11–50</option><option>51–200</option><option>Больше 200</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Сверка по загруженным вами данным. Правильность учёта и подписанный акт остаются за компанией.</p>
+  <p>Сверка по загруженным вами данным. Правильность учёта и подписанный акт остаются за компанией.</p>
 </div></footer>
 
 </body>
